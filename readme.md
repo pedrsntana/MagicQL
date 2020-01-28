@@ -1,4 +1,4 @@
-MagicQL
+# MagicQL
 
 #### A universal Query Language, that works with any database. Be it SQL or NoSQL.
 
