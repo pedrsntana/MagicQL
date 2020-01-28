@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "create-db-settings": "node api/generators/DBsettings.js db-gen-settings",
+    "create-db-config": "node api/generators/DBgenerator.js db-gen-config",
+    "parse-db": "node parser parse-db",
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
@@ -11,8 +14,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
+    "config": "^3.2.5",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "mongodb": "^3.5.2",
+    "morgan": "^1.9.1",
     "path": "^0.12.7",
     "pluralize": "^8.0.0"
   },

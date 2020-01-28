@@ -14,4 +14,4 @@ class Data {
     }
 }
 
-module.exports.default = Data;
+module.exports = Data;

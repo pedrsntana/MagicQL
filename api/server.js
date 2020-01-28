@@ -4,7 +4,7 @@ const logger = require('morgan');
 const config = require('config');
 const ExpressRouter = require('./routes');
 
-const PORT = config.get('server.port');
+const PORT = config.get('settings.port');
 
 class App {
     constructor() {
@@ -15,7 +15,7 @@ class App {
         ]);
 
         const mainRouter = new ExpressRouter();
-        this.server.use('', mainRouter.getRouter());
+        this.server.use('/', mainRouter.getRouter());
 
         this.server.listen(PORT);
         console.log("[APP] Running on port ", PORT);

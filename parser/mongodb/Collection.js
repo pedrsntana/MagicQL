@@ -15,4 +15,4 @@ class Collection {
     }
 }
 
-module.exports.default = Collection;
+module.exports = Collection;
