@@ -16,7 +16,7 @@ cd MagicQL
 npm install
 ```
 
-Create a file in `config`, name `default.json`. In this file you're going to input your DB information, according to the following structure:
+Create a folder named `config` in the root folder, and file named inside it `default.json`. In this file you're going to input your DB information, according to the following structure:
 
 ### MongoDB:
 
